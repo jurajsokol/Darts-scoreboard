@@ -1,0 +1,34 @@
+$tablet: 800px;
+$desktop: 1024px;
+
+$themes: (
+        '--light': (
+                'theme': 'light',
+                'fontColor': '#25282d',
+                'mainBackgroundColor': '#f9fbfd',
+                'primaryColor': '#3167f3',
+                'primaryColorHover': '#2a58cf',
+                'primaryColorActive': '#2752c2',
+                'secondaryColor': '#a8b5d1',
+                'secondaryColorHover': '#8691a7',
+                'secondaryColorActive': '#8691a7',
+                'successColor': '#0da684',
+                'infoColor': '#41cbd8',
+                'warningColor': '#f4a14d',
+                'errorColor': '#ef3463',
+                'borderRadius-md': '8px',
+                'transition': '.3s all ease-out'
+
+        ),
+        '--dark': (
+                'theme': 'dark'
+        ),
+);
+
+@each $name, $map in $themes {
+.body#{$name} {
+    @each $key, $value in $map {
+        --#{$key}: #{$value};
+        }
+    }
+}

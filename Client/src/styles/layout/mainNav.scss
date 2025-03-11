@@ -1,0 +1,34 @@
+.l-mainNav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem 1rem;
+    background: #141824;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.l-mainNav__button{
+    color: #a1a8bd;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    flex-direction: column;
+    gap: .8rem;
+
+    svg{
+        font-size: 2.4rem;
+    }
+}
+
+.l-mainNav__button--cta{
+    background: #3167f345;
+    padding: 0 .5rem;
+    border-radius: 1rem;
+
+}
